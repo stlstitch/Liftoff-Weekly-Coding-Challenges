@@ -1,0 +1,16 @@
+function LongestWord(sen) {
+  var words = sen.split(' ');
+  var longestWord = '';
+
+  for (var i = 0; i < words.length; i++) {
+    var currentWord = words[i].replace(/[^a-zA-Z0-9]/g, ''); // Remove non-alphanumeric characters
+    if (currentWord.length > longestWord.length) {
+      longestWord = currentWord;
+    }
+  }
+
+  return longestWord;
+}
+
+// keep this function call here
+console.log(LongestWord(readline()));

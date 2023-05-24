@@ -1,0 +1,4 @@
+function detectWord(str) {
+  const word = str.replace(/[^a-z]/g, ''); // Extract only lowercase letters
+  return word;
+}
